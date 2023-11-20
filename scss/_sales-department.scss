@@ -1,0 +1,153 @@
+.sales__department {
+  @extend %container;
+
+  h2 {
+    @include a-styles(24px, 700);
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+  .sales__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sales__card {
+    padding: 13px;
+    border-radius: 20px;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-color {
+    background-color: #0e7d2e;
+    width: 115px;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+  }
+  .sales__buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 14px;
+    .button {
+      text-decoration: none;
+      @include a-styles(12px, 400);
+      color: #6c7178;
+      padding: 6px 14px;
+      background-color: #f7f8f8;
+      border-radius: 15px;
+      transition: $transition-one;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+    .button-color {
+      background-color: black;
+      color: white;
+      border: 2px solid transparent;
+      &:hover {
+        border-color: black;
+        background-color: transparent;
+        color: black;
+      }
+    }
+  }
+}
+
+.sales__card {
+    transition: $transition-one;
+    border: 2px solid transparent;;
+    &:hover{
+        border-color:#e1e2e4;
+    }
+  .decoration {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    color: #6c7178;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 154.839% */
+    text-decoration: line-through;
+  }
+  .weight {
+    color: #1d242f;
+    font-size: 17.578px;
+    font-style: normal;
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 27px; /* 153.6% */
+  }
+  .btn-sales {
+    text-decoration: none;
+    padding: 5px 13px;
+    color: #0b2b5e;
+    @include a-styles(14px, 400);
+    border-radius: 8px;
+    border: 1px solid #0b2b5e;
+    transition: $transition-one;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+  .sales__description{
+      margin-top: 12px;
+      @include a-styles (14px,400)
+      ;
+      color:#6C7178;
+  }
+  .stars{
+      span{
+          font-size: 14px;
+          color:#6C7178;
+      }
+  }
+}
+
+
+.sales__buttons-sale{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    gap: 5px;
+    & a:first-child{
+        background-color:#D92E15;
+        padding:15px 20px;
+        
+        border-radius: 15px;
+        transform: $transition-one;
+        svg{
+            transition:all 1s linear ;
+        }
+       svg use{
+            stroke: white;
+            transition: $transition-one;
+
+        }
+        &:hover{
+            width: 80%;
+            svg{
+                transform: translateX(80px);
+            }
+        }
+        &:hover ~ a{
+            display: none;
+        }
+    }
+    & a{
+        background-color:#F7F8F8;
+        padding: 15px;
+        border-radius: 15px;
+        transition: $transition-one;
+        &:hover{
+            background-color:#D92E15;
+            svg use{
+                stroke: white;
+            }
+        }
+    }
+}

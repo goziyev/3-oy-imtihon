@@ -1,0 +1,37 @@
+.header__navigation-three {
+  @extend %container;
+    margin-bottom: 30px;
+
+  display: flex;
+  justify-content: space-between;
+  a {
+    text-decoration: none;
+    color: #6c7178;
+    transition: $transition-one;
+    &:hover {
+      color: black;
+    }
+  }
+  & a:first-child {
+    background-image: url("../images/svgexport-12.svg");
+    width: 94px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    transition: $transition-one;
+    &:hover {
+      background-image: linear-gradient(
+        to right,
+        #52c234 0%,
+        #061700 51%,
+        #52c234 100%
+        );
+        background-size:200% auto;
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

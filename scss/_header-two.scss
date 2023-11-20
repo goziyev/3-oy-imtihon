@@ -1,0 +1,150 @@
+@mixin a-styles($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+}
+.header__navigation-two {
+  width: 100%;
+  background-color:white;
+  .two{
+  @extend %container;
+    display: flex;
+    padding: 10px 0px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+ }
+}
+.header__departments {
+  display: flex;
+  gap: 30px;
+
+  .small-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 7px;
+    a {
+
+      text-decoration: none;
+      @include a-styles(14px, 500);
+      color: #1d242f;
+      
+    }
+    svg {
+      transition: transform 0.2s ease-in-out;
+    }
+    transition: $transition-one;
+    &:hover {
+      a {
+        color: blue;
+      }
+      svg {
+        transform: rotate(360deg);
+      }
+      svg path {
+        stroke: blue;
+      }
+    }
+  }
+  & .small-card:nth-child(4) {
+    &:hover {
+      a {
+        color: red;
+      }
+      svg {
+        transform: scale(1.1);
+        path {
+          fill: red;
+          stroke: red;
+        }
+      }
+    }
+  }
+  & .small-card:nth-child(2):hover {
+    a {
+      color: green;
+    }
+    svg {
+      transform: matrix(1, 0.5, 0, 1, 0, 0);
+      path {
+        stroke: green;
+      }
+    }
+  }
+  & .small-card:nth-child(3):hover {
+    a {
+      color: yellow;
+    }
+    svg {
+      transform: translateX(15px);
+      path {
+        fill: yellow;
+        stroke: yellow;
+      }
+    }
+  }
+}
+
+
+#boxThis.box {
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  box-shadow: 0px 10px 20px #f1f1f1;
+}
+
+.header__katalog {
+  display: flex;
+  background-color: #d92e15;
+  padding: 12px 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  width: 119px;
+
+  a {
+    @include a-styles(14px, 500);
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.header__inputs{
+    display: flex;
+    padding: 1px 1px;
+   
+border:2px solid #F1F1F1;
+border-radius:10px;
+    width: 551px;
+    align-items: center;
+    justify-content: space-between;
+    input::placeholder{
+        color:lightgray;
+        
+    }
+    input{
+        border:none;
+        height: 44px;
+        padding: 10px;
+        outline: none;
+    }
+    a{
+        padding: 9px 25px ;
+        display: inline-block;
+        background-color: #d92e15;
+        display: flex;
+        border-radius: 10px;
+        align-items:center;
+        justify-content: center;
+        
+      svg  path{
+            stroke:white;
+        }
+    }
+
+}

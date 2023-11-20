@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Golos Text',sans-serif;
+}
+%container{
+    max-width: 1440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+$color:#1D242F;
+@import './header';
+@import './header-two';
+@import './header-three';
+@import './header-section';
+@import './popular-part';
+@import './sales-department'
