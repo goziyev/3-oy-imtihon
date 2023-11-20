@@ -463,6 +463,16 @@ body {
   /* 150% */
 }
 
+.sales__department .button-red {
+  padding: 4px 12px;
+  width: 55px;
+  background-color: #D32140;
+}
+
+.sales__department .button-red:hover {
+  background-color: #D32140;
+}
+
 .sales__department .sales__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -516,6 +526,7 @@ body {
   color: #6c7178;
   font-size: 12px;
   font-style: normal;
+  height: 18px;
   font-weight: 500;
   line-height: 18px;
   /* 154.839% */
@@ -535,10 +546,11 @@ body {
 .sales__card .btn-sales {
   text-decoration: none;
   padding: 5px 13px;
-  color: #0b2b5e;
+  color: #0B2B5E;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   border-radius: 8px;
+  font-size: 15px;
   border: 1px solid #0b2b5e;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
@@ -581,8 +593,8 @@ body {
 }
 
 .sales__buttons-sale a:first-child svg {
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .sales__buttons-sale a:first-child svg use {
