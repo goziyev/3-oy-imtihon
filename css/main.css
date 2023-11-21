@@ -9,7 +9,7 @@ body {
   font-family: 'Golos Text',sans-serif;
 }
 
-.header__navigation-one, .header__navigation-two .two, .header__navigation-three, .carusel__section, .popular__categories, .sales__department, .popular__brands {
+.header__navigation-one, .header__navigation-two .two, .header__navigation-three, .carusel__section, .popular__categories, .sales__department, .popular__brands, .your__store {
   max-width: 1440px;
   width: 100%;
   margin-left: auto;
@@ -847,5 +847,33 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #6c7178;
+}
+
+.your__store-background {
+  background-color: #F8F8F9;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.your__store h1 {
+  margin-top: 45px;
+  font-family: 700;
+  font-size: 32px;
+  color: #222C3A;
+}
+
+.your__store p {
+  width: 23em;
+  font-size: 16px;
+  font-weight: 400;
+  color: #6C7178;
+  margin-bottom: 15px;
+}
+
+.your__store .phones {
+  position: absolute;
+  top: -40px;
+  right: 45px;
 }
 /*# sourceMappingURL=main.css.map */
