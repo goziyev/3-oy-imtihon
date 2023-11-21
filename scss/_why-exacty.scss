@@ -1,0 +1,27 @@
+.exactly__for-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.exactly__for-card {
+  width: 226px;
+  border-radius: 20px;
+  border: 2px solid #f5f5f6;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    margin-top: 18px;
+    font-weight: bolder;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    width: 11.93em;
+    line-height: 24px; /* 152.381% */
+  }
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c7178;
+  }
+}
