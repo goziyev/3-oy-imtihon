@@ -9,7 +9,7 @@ body {
   font-family: 'Golos Text',sans-serif;
 }
 
-.header__navigation-one, .header__navigation-two .two, .header__navigation-three, .carusel__section, .popular__categories, .sales__department {
+.header__navigation-one, .header__navigation-two .two, .header__navigation-three, .carusel__section, .popular__categories, .sales__department, .popular__brands {
   max-width: 1440px;
   width: 100%;
   margin-left: auto;
@@ -392,6 +392,13 @@ body {
   gap: 16px;
   border-radius: 10px;
   width: 226px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.popular__blocks .popular__card:hover {
+  -webkit-box-shadow: 0px 0px 40px #f5f5f6;
+          box-shadow: 0px 0px 40px #f5f5f6;
 }
 
 .popular__blocks .popular__card > div {
@@ -765,5 +772,39 @@ body {
   margin-top: 8px;
   padding: 11.75px 10.79px 13px 11px;
   color: #1D242F;
+}
+
+.popular__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular__cards .popular__card {
+  padding: 28px 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  border: 2px solid #f5f5f6;
+  cursor: pointer;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.popular__cards .popular__card:hover {
+  background-color: #f5f5f6;
+  -webkit-box-shadow: 0px 0px 30px #f5f5f6;
+          box-shadow: 0px 0px 30px #f5f5f6;
 }
 /*# sourceMappingURL=main.css.map */
