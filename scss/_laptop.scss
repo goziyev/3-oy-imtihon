@@ -1,0 +1,50 @@
+.laptops-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  padding: 37px 13px 13px;
+  align-items: center;
+  border-radius: 20px;
+  transition: $transition-one;
+&:hover{
+    border-color: #f8f8f9;
+}
+  .laptop__description {
+    margin-top: 12px;
+    color: #6c7178;
+    width: 13em;
+    text-align: center;
+    @include a-styles(14px, 600);
+  }
+  .laptop__description + p {
+    color: #000;
+    text-align: center;
+    font-size: 17.438px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27px; /* 154.839% */
+  }
+  .laptop-texts {
+    display: flex;
+    background-color: #f8f8f9;
+    align-items: center;
+    border-radius: 10px;
+    height: auto;
+    height: 50px;
+    padding: 2px;
+    & p:first-child {
+      padding: 13px 11px;
+      margin-top:15px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #1d242f;
+      border-radius: 10px;
+      background: #fff;
+    }
+    & p:last-child {
+        margin-top: 8px;
+      padding: 11.75px 10.79px 13px 11px;
+     color: #1D242F
+    }
+  }
+}
