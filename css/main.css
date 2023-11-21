@@ -335,6 +335,10 @@ body {
   text-decoration: none;
 }
 
+.radius {
+  border-radius: 20px;
+}
+
 .popular__categories {
   margin-top: 30px;
 }
