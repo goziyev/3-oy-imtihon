@@ -9,7 +9,7 @@ body {
   font-family: 'Golos Text',sans-serif;
 }
 
-.header__navigation-one, .header__navigation-two .two, .header__navigation-three, .carusel__section, .popular__categories, .sales__department, .popular__brands, .your__store {
+.header__navigation-one, .header__navigation-two .two, .header__navigation-three, .carusel__section, .popular__categories, .sales__department, .popular__brands, .your__store, .main___footer, .lower__footer .lower__links {
   max-width: 1440px;
   width: 100%;
   margin-left: auto;
@@ -873,7 +873,140 @@ body {
 
 .your__store .phones {
   position: absolute;
-  top: -40px;
+  top: -49px;
   right: 45px;
+}
+
+footer {
+  background-color: #1D242F;
+  width: 100%;
+  padding: 64px 0px 0px;
+}
+
+.main___footer {
+  color: white;
+  padding-bottom: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  width: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__flex div {
+  background-color: #222C3A;
+  width: 144px;
+  height: 54px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__info > h2 {
+  font-weight: bolder;
+}
+
+.footer__info p {
+  width: 274px;
+}
+
+.footer__info p:nth-child(odd) {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.footer__purchase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__purchase p {
+  margin-left: 13%;
+}
+
+.footer__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.footer__texts a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__texts a:hover {
+  color: blue;
+}
+
+.lower__footer {
+  background-color: #222C3A;
+  padding: 24px 0px;
+}
+
+.lower__footer .lower__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lower__footer .lower__links h4 {
+  color: white;
+  font-size: 16px;
+}
+
+.lower__footer .lower__links div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
 }
 /*# sourceMappingURL=main.css.map */
