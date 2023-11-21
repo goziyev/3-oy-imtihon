@@ -10,7 +10,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
   }
   .sales__card {
     padding: 13px;
@@ -28,12 +27,13 @@
     font-weight: 400;
     line-height: 18px; /* 150% */
   }
-  .button-red{
-      padding: 4px 12px;
-      width: 55px;
-      background-color:#D32140;&:hover{
-          background-color:#D32140;
-      }
+  .button-red {
+    padding: 4px 12px;
+    width: 55px;
+    background-color: #d32140;
+    &:hover {
+      background-color: #d32140;
+    }
   }
   .sales__buttons {
     display: flex;
@@ -66,11 +66,11 @@
 }
 
 .sales__card {
-    transition: $transition-one;
-    border: 2px solid transparent;;
-    &:hover{
-        border-color:#e1e2e4;
-    }
+  transition: $transition-one;
+  border: 2px solid transparent;
+  &:hover {
+    border-color: #e1e2e4;
+  }
   .decoration {
     margin-top: 8px;
     margin-bottom: 4px;
@@ -93,7 +93,7 @@
   .btn-sales {
     text-decoration: none;
     padding: 5px 13px;
-    color: #0B2B5E;
+    color: #0b2b5e;
     @include a-styles(14px, 600);
     border-radius: 8px;
     font-size: 15px;
@@ -104,60 +104,106 @@
       color: white;
     }
   }
-  .sales__description{
-      margin-top: 12px;
-      @include a-styles (14px,400)
-      ;
-      color:#6C7178;
+  .sales__description {
+    margin-top: 12px;
+    @include a-styles(14px, 400);
+    color: #6c7178;
   }
-  .stars{
-      span{
-          font-size: 14px;
-          color:#6C7178;
-      }
+  .stars {
+    span {
+      font-size: 14px;
+      color: #6c7178;
+    }
   }
 }
 
+.sales__buttons-sale {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  gap: 5px;
+  & a:first-child {
+    background-color: #d92e15;
+    padding: 15px 20px;
 
-.sales__buttons-sale{
+    border-radius: 15px;
+    transform: $transition-one;
+    svg {
+      transition: all 0.5s linear;
+    }
+    svg use {
+      stroke: white;
+      transition: $transition-one;
+    }
+    &:hover {
+      width: 80%;
+      svg {
+        transform: translateX(80px);
+      }
+    }
+    &:hover ~ a {
+      display: none;
+    }
+  }
+  & a {
+    background-color: #f7f8f8;
+    padding: 15px;
+    border-radius: 15px;
+    transition: $transition-one;
+    &:hover {
+      background-color: #d92e15;
+      svg use {
+        stroke: white;
+      }
+    }
+  }
+}
+.sales__card {
+  .btn-sales-decription {
+    background-color: #fdf5f3;
+    color: #d92e15;
+    width: 149px;
+    @include a-styles(12px, 700);
+    display: inline-block;
+    padding: 6px 8px;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: default;
+  }
+  .sales__shopping{
+    border:none;
+    color:white;
+    width: 100%;
+    margin-top: 3px;
+    padding: 14px;
+    border-radius:15px;
+    display: block  ;
+    background-color: #D92E15;
+    transition: $transition-one;
+    &:hover{
+      background-size: 200% auto;
+
+        background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+        background-position: right center; /* change the direction of the change here */
+     
+    }
+  }
+  .button_orange{
+    width: 7em;
+    @include a-styles (12px ,400);
+    background-color:#FF0054;
+    border:none;
+
+    &:hover{
+      border:none;
+      background-color:#FF0054;
+
+    }
+  }
+  .sales__like{
     display: flex;
-    margin-top: 5px;
+    justify-content: space-between;
     align-items: center;
-    gap: 5px;
-    & a:first-child{
-        background-color:#D92E15;
-        padding:15px 20px;
-        
-        border-radius: 15px;
-        transform: $transition-one;
-        svg{
-            transition:all 0.5s linear ;
-        }
-       svg use{
-            stroke: white;
-            transition: $transition-one;
-
-        }
-        &:hover{
-            width: 80%;
-            svg{
-                transform: translateX(80px);
-            }
-        }
-        &:hover ~ a{
-            display: none;
-        }
-    }
-    & a{
-        background-color:#F7F8F8;
-        padding: 15px;
-        border-radius: 15px;
-        transition: $transition-one;
-        &:hover{
-            background-color:#D92E15;
-            svg use{
-                stroke: white;
-            }
-        }
-    }
+    
+  }
 }
